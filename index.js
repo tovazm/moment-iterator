@@ -44,7 +44,6 @@ MomentIterator.prototype.each = function(amplitude, callback, options) {
 				y: rtn.year(),
 				o: rtn.year() + (rtn.month() + 1) * 0.01
 			})
-			callback(rtn.toObject());
 		} else {
 			callback(rtn);
 		}
