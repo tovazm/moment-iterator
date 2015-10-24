@@ -31,6 +31,7 @@ MomentIterator.prototype.each = function(amplitude, callback, options) {
 	if (options && options.leading === false) {
 		tmp.add(step, amplitude);
 	}
+
 	while (tmp.isBefore(end)) {
 		var rtn = tmp;
 		if (options && options.toDate) {
@@ -38,11 +39,7 @@ MomentIterator.prototype.each = function(amplitude, callback, options) {
 		} else if (options && options.format) {
 			callback(rtn.format(options.format))
 		} else if (options && options.toObject) {
-			callback({
-				m: rtn.month() + 1,
-				y: rtn.year(),
-				o: rtn.year() + (rtn.month() + 1) * 0.01
-			})
+			callback(rtn.toObject());
 		} else {
 			callback(rtn);
 		}
