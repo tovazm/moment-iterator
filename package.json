@@ -1,14 +1,31 @@
 {
   "name": "moment-iterator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "moment iterator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "abel chalier",
   "license": "ISC",
   "dependencies": {
     "moment": "^2.10.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tovazm/moment-iterator.git"
+  },
+  "keywords": [
+    "date",
+    "iterator",
+    "range",
+    "momentjs",
+    "moment.js",
+    "moment"
+  ],
+  "bugs": {
+    "url": "https://github.com/tovazm/moment-iterator/issues"
+  },
+  "homepage": "https://github.com/tovazm/moment-iterator"
 }
