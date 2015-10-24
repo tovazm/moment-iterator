@@ -31,7 +31,6 @@ MomentIterator.prototype.each = function(amplitude, callback, options) {
 	if (options && options.leading === false) {
 		tmp.add(step, amplitude);
 	}
-
 	while (tmp.isBefore(end)) {
 		var rtn = tmp;
 		if (options && options.toDate) {
