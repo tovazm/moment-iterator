@@ -1,6 +1,6 @@
 {
   "name": "moment-iterator",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "moment iterator",
   "main": "index.js",
   "scripts": {

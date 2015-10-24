@@ -14,7 +14,7 @@ npm install moment-iterator --save
 ### Few examples
 
 
-#####Basic example:
+##### Basic example:
 
 ```
 var momentIterator = require('moment-iterator');
@@ -36,7 +36,7 @@ momentIterator(start, end).each('months', function(d) {
 
 ```
 
-#####Using custom step:
+##### Using custom step:
 ```
 
 
