@@ -5,9 +5,8 @@
 
 ### Installation
 
-```
+```js
 npm install moment-iterator --save
-
 ```
 
 
@@ -16,7 +15,7 @@ npm install moment-iterator --save
 
 ##### Basic example:
 
-```
+```js
 var momentIterator = require('moment-iterator');
 
 var start = new Date(2015, 4, 12);
@@ -33,13 +32,11 @@ momentIterator(start, end).each('months', function(d) {
 //	--> August 12, 2015
 //	--> September 12, 2015
 //	--> October 12, 2015
-
 ```
 
 ##### Using custom step:
-```
 
-
+```js
 momentIterator(start, end).each('4 hours', function(d) {
 	console.log('-->', d)
 })
@@ -49,13 +46,11 @@ momentIterator(start, end).each('4 hours', function(d) {
 //	--> Tuesday, May 12, 2015 4:00 AM
 //	--> Tuesday, May 12, 2015 8:00 AM
 //	...
-
 ```
 
 ##### toObject:
 
-```
-
+```js
 momentIterator(start, end).each('3 months', console.log, {
 	toObject: true
 });
@@ -63,12 +58,11 @@ momentIterator(start, end).each('3 months', console.log, {
 
 //	{ years: 2015, months: 4, date: 12, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 }
 //	{ years: 2015, months: 7, date: 12, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 }
-
 ```
 
 ##### trailling/leading date:
 
-```
+```js
 momentIterator(start, end).each('3 months', console.log, {
 	toObject: true,
 	leading: false,
@@ -78,11 +72,11 @@ momentIterator(start, end).each('3 months', console.log, {
 
 //	{ years: 2015, months: 7, date: 12, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 }
 //	{ years: 2015, months: 10, date: 12, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 }
-
 ```
+
 ##### formating date:
 
-```
+```js
 var range = momentIterator(start, end).range('months', {
 	format:'LLL'
 })
@@ -94,13 +88,11 @@ console.log(range)
 //	  'August 12, 2015 12:00 AM',
 //	  'September 12, 2015 12:00 AM',
 //	  'October 12, 2015 12:00 AM' ]
-
 ```
-
 
 ### Options
 
-```
+```js
 {
 	toDate:Boolean     // callback javascript date,
 	toObject           // callback javascript plain object,
@@ -108,7 +100,6 @@ console.log(range)
 	trailling:Boolean  // Specify invoking on the trailling edge of the range, (default true) 
 	leading:Boolean    // Specify invoking on the leading edge of the range. (default false)  
 }
-
 ```
 
 
